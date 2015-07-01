@@ -1,0 +1,152 @@
+*{margin:0;padding:0;}
+
+body{
+	backgro	und-color: rgb(245, 245, 245);
+}
+@font-face{
+	font-family: roboto_thin;
+	src:url(../font/Roboto-Thin.ttf);
+}
+@font-face{
+	font-family: roboto_light;
+	src:url(../font/Roboto-Light.ttf);
+}
+#container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	  display: -webkit-flex;
+	  flex-direction: column;
+}
+#header_container{
+	position: relative;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 16%;
+	display: flex;
+	flex-direction:row;
+
+}
+#logo_unit{
+	height: 100%;
+	left: 5%;
+	position: absolute;
+}
+#logo_unit img{
+	height: 100%;
+}
+#login_box{
+	position: absolute;
+	right: 5%;
+	top:30%;
+	padding: 5px;
+	font-family: roboto_light;
+}
+#login_box:hover{
+	background-color: rgba(215, 214, 214, 0.45);
+	cursor: default;
+}
+#content_container{
+	width: 100%;
+  	position: relative;
+  	background-color: rgb(245, 245, 245);
+  	height: 100%;
+  	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;
+}
+#menu_outer_container{
+	display:flex;
+	display:-webkit-flex;
+	flex-direction: column;
+	background-color: white;
+  border-bottom: 1px solid rgba(184,184,184, 0.6);
+  padding: 10px;
+  border-top: 1px solid  rgba(184, 184, 184, 0.6);
+}
+
+#menu_container, #exams_menu{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	list-style: none;
+	width: 80%;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#exams_menu li{
+	margin-top: 4px;
+	display:none;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	}
+#menu_container a, #menu_container li, #exams_menu a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.85);
+}
+#menu_container li, #exams_menu li{
+	flex: 1;
+	text-align: center;
+}
+#menu_container li:hover, #exams_menu li:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+#heading{
+	margin-top: 25vh;
+	margin-right: auto;
+	margin-left: auto;
+}
+#heading h2{
+	  text-align: center;
+	  font-size: 6.75vw;
+	  color: rgba(255, 255, 255, 0.9);
+	  font-family: roboto_thin;
+	  text-decoration: none;
+	  font-weight: lighter;
+}
+#description{
+	width:48vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5vh;
+}
+#description p{
+	color: rgba(255, 255, 255, 0.9);
+	font-family: roboto_thin;
+	text-align: center;
+	font-size: 1.35vw;
+}
+
+#footer_container{
+	height: 5%;
+	background-color: white;
+}
+#content_container_pages{
+	width: 100%;
+  	position: relative;
+  	height: 100%;
+  	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;
+}
+@media screen and (max-width: 830px){
+	#menu_container{
+		display: flex;
+		display: -webkit-flex;
+		flex-direction: row;
+		list-style: none;
+		width: 100%;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#description{
+		width:75vw;
+	}
+	#description p{
+		font-size: 2.75vw;
+	}
+	#heading h2{
+		font-size: 10vw;
+	}
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>Glad | Express to Inspire</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Glad Express to Inspire" />
+		<meta name="keywords" content="Glad The Magazine, Glad, College Guidance, College Counselling, Help Juniors, IIT Kharagpur, Alumni Student Interaction" />
+		<meta property="og:title" content="Glad Expres to Inspire"/>
+		<meta property="og:image" content=" img/home.jpg"/>
+		<meta property="og:site_name" content="Glad Express to Inspire"/>
+		<meta property="og:description" content="Glad intends to form a bridge between the alumni and engineering students so as to help them in variety of ways."/>
+		
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type='text/css' href="css/style.css"/>
+
+		<script type="text/javascript" src='js/jquery.js'></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header_container">
+				<div id="logo_unit"><img src="img/logo.png" /></div>
+				<div id="login_box">Login | Register</div>
+				<div class="clear_all"></div>
+			</div>
+			<div id="menu_outer_container" style="background-color: rgb(4, 132, 241); border-top:0px; border-bottom: 1px solid rgba(255, 255, 255, 0.6);">
+				<ul id="menu_container">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li id="exams">Entrance Exams</li>
+					<li><a href="alumni.html">For Alumni</a></li>
+					<li><a href="forum.html">Forum</a></li>
+				</ul>
+				<ul id="exams_menu"><li><a href="jee.html">JEE</a></li><li><a href="bitsat.html">BTSAT</a></li><li><a href="wbjee.html">WBJEE</a></li><li><a href="eamcet.html">EAMCET</a></li><li><a href="kcet.html">KCET</a></li></ul>
+			</div>
+			<div id="content_container" style="background-color: rgb(4, 132, 241);">
+				<div id="heading"><h2>Express to Inspire</h2></div>
+				<div id="description">
+					<p>With our “personalized professional orientation programmes” for engineering students in India, we are introducing transformational learning among engineering students so that they can discover what they are passionate about.</p>
+				</div>
+			</div>
+			<div id="footer_container"></div>
+		</div>
+	<script>
+		$("#exams").click(function(){
+			$("#exams_menu li").slideDown('slow');
+			setTimeout(function(){$("#exams_menu li").slideUp('fast');}, 5000);
+			});
+	</script>
+	</body>
+</html>
